@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-import GameStore from '../stores/gamestore.js';
+import { inject, observer } from 'mobx-react';
+import GameStore from '../stores/gamestore';
 
-class NewTeam extends Component {
+const FactorTarget = inject('GameStore')(observer(class FactorTarget extends Component {
   constructor(props) {
     super(props);
 
@@ -11,6 +12,7 @@ class NewTeam extends Component {
     this.handleClick = this.handleClick.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
   }
+
   handleClick(e) {
     e.preventDefault();
 
@@ -19,7 +21,7 @@ class NewTeam extends Component {
 
   handleKeyPress(e) {
     if (e.key === 'Enter') {
-      GameStore.addTeam(e.currentTarget.value.trim());
+      GameStore.changeFactorTarget(e.currentTarget.value);
       this.setState({ active: false });
       e.currentTarget.value = '';
     }
@@ -30,10 +32,11 @@ class NewTeam extends Component {
       ? 'active'
       : 'not-active';
 
-    return <div className="new-team scoreboard-box" onClick={this.handleClick}>+
+    return <div className="factor-target">
+      <div className="number" onClick={this.handleClick}>{this.props.GameStore.factorTarget}</div>
       <input className={inputState} type="text" onKeyPress={this.handleKeyPress} />
-    </div>
+    </div >
   }
-}
+}));
 
-export default NewTeam;
+export default FactorTarget;

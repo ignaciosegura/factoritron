@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import GameStore from '../stores/gamestore.js';
 
-class Button extends Component {
+class ScoreButton extends Component {
   constructor(props) {
     super(props);
 
@@ -31,4 +31,4 @@ class Button extends Component {
   }
 }
 
-export default Button;
+export default ScoreButton;

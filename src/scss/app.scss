@@ -1,0 +1,25 @@
+@import './vars.scss';
+@import './html.scss';
+@import './animations.scss';
+@import './board.scss';
+@import './scoreboard.scss';
+@import './factortarget.scss';
+
+.App {
+  text-align: center;
+  user-select: none;
+}
+
+.App-header {
+  box-sizing: border-box;
+  background-color: $background-color;
+  height: 100px;
+  font-size: 60px;
+  color: cyan;
+  text-align: left;
+  padding: 20px 50px;
+}
+
+.App-link {
+  color: #61dafb;
+}

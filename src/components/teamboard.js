@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import { inject, observer } from 'mobx-react';
 
-import Button from './button.js';
+import ScoreButton from './scorebutton.js';
 
 const TeamBoard = inject('GameStore')(observer(class TeamBoard extends Component {
   constructor(props) {
@@ -15,8 +15,8 @@ const TeamBoard = inject('GameStore')(observer(class TeamBoard extends Component
       <div className="name">{this.teamInfo.name}</div>
       <div className="score">{this.teamInfo.score}</div>
       <div className="buttons">
-        <Button sign="+" team={this.props.team} />
-        <Button sign="-" team={this.props.team} />
+        <ScoreButton sign="+" team={this.props.team} />
+        <ScoreButton sign="-" team={this.props.team} />
       </div>
     </div>;
   }

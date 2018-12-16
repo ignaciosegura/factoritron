@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import './App.scss';
+import './scss/app.scss';
 
 import ScoreBoard from './components/scoreboard.js';
+import FactorTarget from './components/factortarget.js';
 
 class App extends Component {
   render() {
@@ -10,7 +11,10 @@ class App extends Component {
         <header className="App-header">
           <div className="title">Factoritrón</div>
         </header>
-        <ScoreBoard />
+        <section className="board">
+          <FactorTarget />
+          <ScoreBoard />
+        </section>
       </div>
     );
   }
