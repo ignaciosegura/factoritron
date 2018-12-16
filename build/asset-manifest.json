@@ -1,13 +1,13 @@
 {
-  "main.css": "/factoritron/static/css/main.8abc0b65.chunk.css",
-  "main.js": "/factoritron/static/js/main.52f2cd95.chunk.js",
-  "main.js.map": "/factoritron/static/js/main.52f2cd95.chunk.js.map",
+  "main.css": "/factoritron/static/css/main.db5ea406.chunk.css",
+  "main.js": "/factoritron/static/js/main.e6686df2.chunk.js",
+  "main.js.map": "/factoritron/static/js/main.e6686df2.chunk.js.map",
   "static/js/1.9a0cc781.chunk.js": "/factoritron/static/js/1.9a0cc781.chunk.js",
   "static/js/1.9a0cc781.chunk.js.map": "/factoritron/static/js/1.9a0cc781.chunk.js.map",
   "runtime~main.js": "/factoritron/static/js/runtime~main.b73d292e.js",
   "runtime~main.js.map": "/factoritron/static/js/runtime~main.b73d292e.js.map",
-  "static/css/main.8abc0b65.chunk.css.map": "/factoritron/static/css/main.8abc0b65.chunk.css.map",
+  "static/css/main.db5ea406.chunk.css.map": "/factoritron/static/css/main.db5ea406.chunk.css.map",
   "index.html": "/factoritron/index.html",
-  "precache-manifest.344f25fa5c81bc2caf8a2b56d2672a57.js": "/factoritron/precache-manifest.344f25fa5c81bc2caf8a2b56d2672a57.js",
+  "precache-manifest.1a6dd061c8109710d79094de1a1200b5.js": "/factoritron/precache-manifest.1a6dd061c8109710d79094de1a1200b5.js",
   "service-worker.js": "/factoritron/service-worker.js"
 }
