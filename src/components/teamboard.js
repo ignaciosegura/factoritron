@@ -11,7 +11,7 @@ const TeamBoard = inject('GameStore')(observer(class TeamBoard extends Component
     this.teamInfo = this.props.GameStore.teams[team];
   }
   render() {
-    return <div className="teamboard">
+    return <div className="teamboard scoreboard-box">
       <div className="name">{this.teamInfo.name}</div>
       <div className="score">{this.teamInfo.score}</div>
       <div className="buttons">

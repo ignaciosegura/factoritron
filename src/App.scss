@@ -1,10 +1,14 @@
+$button-family: Arial, Helvetica, sans-serif;
+$background-color: #282c34;
+
 .App {
   text-align: center;
+  user-select: none;
 }
 
 .App-header {
   box-sizing: border-box;
-  background-color: #282c34;
+  background-color: $background-color;
   height: 100px;
   font-size: 60px;
   color: cyan;
@@ -21,14 +25,23 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
-  .teamboard {
-    width: calc(25% - 100px);
+  .scoreboard-box {
+    box-sizing: border-box;
+    width: calc(20% - 80px);
     border: solid cyan 4px;
-    padding: 100px;
+    padding: 80px;
     margin: 50px;
     text-align: center;
+    opacity: 0;
+
+    animation: fade-in 0.5s ease-in-out 0s 1 forwards;
+  }
+
+  .teamboard {
+    min-width: 250px;
+    min-height: 500px;
 
     .name {
       font-size: 40px;
@@ -52,14 +65,49 @@
         margin: 10px;
         font-size: 20px;
         font-weight: bold;
-        font-family: Helvetica, Arial, sans-serif;
+        font-family: $button-family;
         padding: 0.5em;
         border-radius: 50%;
         background: white;
-        color: #282c34;
+        color: $background-color;
 
         cursor: pointer;
       }
     }
+  }
+
+  .new-team {
+    width: auto;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 100px;
+    font-family: $button-family;
+    font-weight: bold;
+
+    input {
+      display: block;
+      background: transparent;
+      color: white;
+      font-family: $button-family;
+      font-size: 20px;
+      border: solid 2px white;
+      padding: 5px;
+
+      visibility: hidden;
+
+      &.active {
+        visibility: visible;
+      }
+    }
+  }
+}
+
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

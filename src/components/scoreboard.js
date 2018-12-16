@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 
 import TeamBoard from './teamboard.js';
+import NewTeam from './newteam.js';
 
 const ScoreBoard = inject('GameStore')(observer(
   class ScoreBoard extends Component {
@@ -19,6 +20,7 @@ const ScoreBoard = inject('GameStore')(observer(
 
       return <div className="scoreboard">
         {ScoreList}
+        <NewTeam />
       </div>
     }
   }
