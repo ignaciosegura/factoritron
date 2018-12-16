@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/factoritron/precache-manifest.91deca6b5e746613f7cbca3d42ce6074.js"
+  "/factoritron/precache-manifest.344f25fa5c81bc2caf8a2b56d2672a57.js"
 );
 
 workbox.clientsClaim();
