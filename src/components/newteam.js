@@ -20,8 +20,9 @@ class NewTeam extends Component {
 
   handleKeyPress(e) {
     if (e.key === 'Enter') {
-      this.addTeam(e.currentTarget.value);
+      this.addTeam(e.currentTarget.value.trim());
       this.setState({ active: false });
+      e.currentTarget.value = '';
     }
   }
 
